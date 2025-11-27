@@ -1,72 +1,35 @@
-# Number Guessing Game
-There are 2 python files in this project both of which serve the purpose of a number Guessing Game
-- Number_Guess_Game.py (**Command Line Version**) - Basic version of a number guessing game written in Python.
-- Number_Guess_Game_with_GUI.py (**Integrated GUI**) - UI built into the game with TKinter
+# 🎮 Number Guessing Game
+A simple number-guessing game written in Python. The project includes two versions - a classic command-line interface and a GUI version with a standalone Windows executable. Functionally, both work the same, with the big difference being that one runs in a terminal and the other as a desktop app.
 
-GUI version contains a standalone **Windows executable(.exe)**!
+## 🛠️ Technology
+- `Python`
+- `Tkinter`
+- `PyInstaller`
+- `HTML`
 
-## **Command Line Version**
-Number guessing game where players enter guesses in the terminal and receive feedback until they successfully guess the correct number.
+## 🚀 Features
+- **Command-line version**: number guessing game playable entirely in the terminal
+- **GUI version**: a friendly interface using Tkinter, with input field, messages and buttons
+- **Standalone Windows executable**: the GUI version can be run without requiring Python to be installed, packaged as `.exe` for easy distribution
+- **Gameplay**: guess a random number between 1 and 10, limited attempts, and feedback (too low / too high) after each guess
 
-### **Features:**
-- Random number generation between 1 and 10
-- Up to 10 attempts to guess the number
-- Feedback on whether the guess is too high or too low
-- Hint provided on the second-to-last attempt
+## 🧠 The Process
+I started this project to try to package a simple Python project into an executable file, and figured a number guesser is as simple a Python project. I first wrote the command-line version to focus on the core logic - random number generation, input handling, attempt limits and feedback. Later, I wanted to see how the game would feel with a user-friendly interface, so I added a GUI version using Tkinter.
 
-### **How to Run:**
-```bash
-python Number_Guess_Game.py
-```
----
+To make the GUI version easier to share - and to remove the dependency on Python for end users - I packaged it into a standalone Windows executable using `PyInstaller`. That way, anyone on Windows can run the .exe and play, without needing to install Python or manually run the script.
 
-## **GUI Version**
-A graphical version of the number guessing game using Tkinter, featuring a user-friendly interface with buttons and messages.
+## 📦 Running the Project
+### 1. Command-Line Version
+1. Clone or download the repository
+2. Make sure Python is installed on your machine
+3. Run in terminal/command prompt: python Number_Guess_Game.py
 
+### 1. GUI Version (Executable)
+Option 1 - Using the pre-built `.exe`:
+1. Download the ZIP from Releases (or the `dist/` folder)
+2. Extract contents
+3. Double-click `Number_Guess_Game_with_gui.exe` to run
 
-### **Features:**
-- Same gameplay as the command-line version
-- Graphical input field instead of terminal-based input
-- Error handling and message pop-ups for incorrect inputs
-- Reset button to start a new game easily
-
-## Running the EXE (No Python Required)
-Option 1 (Through zip file)
-1. Download the ZIP file from the **Releases** section.
-2. Extract the ZIP file.
-3. Open the extracted folder and double-click `Number_Guess_Game_with_gui.exe`.
-
-Option 2 (Through dist/ folder)
-1. Clone/download repository
-2. Navigate dist/ folder
-3. Run Number_Guess_Game_with_gui
-
-### **How to Run:**
-```bash
-python Number_Guess_Game_with_gui.py
-NumberGuesser/
-```
-
-## Project Structure
-NumberGuesser/
-│── build/ # Build files (can be ignored) 
-│── dist/ # Contains the .exe file 
-│── Number_Guess_Game.py # Command-line version 
-│── Number_Guess_Game_with_gui.py # GUI version 
-│── Number_Guess_Game_with_gui.spec # Spec file for PyInstaller 
-│── README.md # Documentation 
-│── Number_Guess_Game_with_gui.zip #Game packed into an executable file
-
-## Building the exe on your own
-If you wish to build the exe from the code itself, you can run this command in the terminal
-Prerequisite:
-1. Ensure pyinstaller is installed
-
-```bash
-pyinstaller --onefile --windowed Number_Guess_Game_with_gui.py
-```
-
-### **Clone the Repository:**
-```bash
-git clone https://github.com/Qdanial01/Number-Guessing.git
-cd number-guesser
+Option 2 - Run from source (requires Python):
+1. Clone or download the repository
+2. Run with Python: python Number_Guess_Game_with_gui.py
