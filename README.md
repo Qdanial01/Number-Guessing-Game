@@ -33,3 +33,6 @@ Option 1 - Using the pre-built `.exe`:
 Option 2 - Run from source (requires Python):
 1. Clone or download the repository
 2. Run with Python: python Number_Guess_Game_with_gui.py
+
+## 🖼️ Preview
+https://github.com/user-attachments/assets/3846d13b-4979-4ef1-9c1e-ad61f4a59ac0
